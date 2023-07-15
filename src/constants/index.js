@@ -13,15 +13,19 @@ import {
     nodejs,
     mongodb,
     git,
+    sql,
+    cpp,
+    c,
+    githubtech,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    enactus,
+    trophy,
+    growth,
+    luckgame,
+    ecommerce,
+    cardpay,
+    newsletter,
     threejs,
   } from "../assets";
   
@@ -38,24 +42,29 @@ import {
       id: "contact",
       title: "Contact",
     },
+    
   ];
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Resume",
       icon: web,
+      link: "https://drive.google.com/drive/folders/1JqGFxIsfVd3dLDuXd50Tgo3CyUHZqFFx?usp=drive_link",
     },
     {
-      title: "React Native Developer",
+      title: "Linkedin",
       icon: mobile,
+      link: "https://www.linkedin.com/in/tisha-singhal-1b7460227/",
     },
     {
-      title: "Backend Developer",
+      title: "Github",
       icon: backend,
+      link: "https://github.com/TishaSinghal",
     },
     {
-      title: "Content Creator",
+      title: "Leetcode",
       icon: creator,
+      link: "https://leetcode.com/Tisha_03/" ,
     },
   ];
   
@@ -72,18 +81,18 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
+    /*{
       name: "TypeScript",
       icon: typescript,
-    },
+    },*/
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
+    /*{
       name: "Redux Toolkit",
       icon: redux,
-    },
+    },*/
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -105,68 +114,71 @@ import {
       icon: git,
     },
     {
+      name: "MySQL",
+      icon: sql,
+    },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "C",
+      icon: c,
+    },
+    {
+      name: "Github",
+      icon: githubtech,
+    },
+    /*{
       name: "figma",
       icon: figma,
     },
     {
       name: "docker",
       icon: docker,
-    },
+    },*/
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Marketing and Campaigns Head",
+      company_name: "Enactus ADGITM",
+      icon: enactus,
+      iconBg: "#FFFFFF",
+      date: "June 2022 - June 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Lead a team towards the goal of organization while following latest trends to approach a potential customer.",
+        "Collaborating with cross-functional departments including business development, content managers, and others.",
+        "Participated in numerous Bplan & CaseStudy competitions and emerged as winnners for many.",
+        "Managed various events and competitions under EnactusADGITM. ",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Achievements",
+      company_name: "",
+      icon: trophy,
+      iconBg: "#FFFFFF",
+      date: "",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Second Position at FaceTheCase by NSUT, Delhi [March,2022]",
+        "AIR45 in Codeblooded 3.0 by CodechefADGITM x CodingNinjas [April,2023]",
+        "Third Position at SmartTank by SBSEC ,Delhi [April, 2023]",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      title: "Opportunities",
+      company_name: "",
+      icon: growth,
+      iconBg: "#FFFFFF",
+      date: "",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+        "Successfully completed Include <Her> Cohort 2.0 [June2023]",
+        "Selected as an open source contributor for Social Summer of Code Season2 [June 2023]",
+        "Selected for Web Developement internship position at CodeSoft [July 2023]",
+        "Selected for the Virtual Internship Program at Bharat Intern as Full stack Web Developer [July 2023]",
+        "Executive member at CodechefADGITM [Januarary 2023]"
+      ], 
+    },    
   ];
   
   const testimonials = [
@@ -198,16 +210,17 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Card Payment",
+      wlink: "https://react-website-two-beryl.vercel.app/",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based modern platform for a company that deals with card payment.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
@@ -215,51 +228,67 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: cardpay,
+      source_code_link: "https://github.com/TishaSinghal/ReactWebsite",
     },
     {
-      name: "Job IT",
+      name: "Newsletter Style",
+      wlink: "https://tishasinghal.github.io/Newsletter/",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that resembles a newsletter format. A unique formatted website.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: newsletter,
+      source_code_link: "https://github.com/TishaSinghal/Newsletter",
     },
+    {
+      name: "Ecommerce Platform",
+      wlink:"https://tishasinghal.github.io/Ecommerce/",
+      description:
+        "A responsive ecommerce platform with a blog and contact page.",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ecommerce,
+      source_code_link: "https://github.com/TishaSinghal/Ecommerce",
+    },
+    {
+      name: "Luck Game",
+      description:
+        "A luck based gamed build on javascript for better understanding of concepts.",
+      tags: [
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: luckgame,
+      source_code_link: "https://github.com/TishaSinghal/GamblingGame",
+    },
+
   ];
   
   export { services, technologies, experiences, testimonials, projects };

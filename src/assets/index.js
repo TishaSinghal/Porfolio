@@ -13,6 +13,10 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import sql from "./tech/sql.png";
+import cpp from "./tech/cpp.png";
+import c from "./tech/c.png";
+import githubtech from "./tech/githubtech.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -22,13 +26,14 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import trophy from "./company/trophy.png";
+import enactus from "./company/enactus.png";
+import growth from "./company/growth.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import cardpay from "./cardpay.png";
+import newsletter from "./newsletter.png";
+import ecommerce from "./ecommerce.png";
+import luckgame from "./luckgame.png"
 
 export {
   logo,
@@ -48,15 +53,19 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  sql,
+  cpp,
+  c,
+  githubtech,
   redux,
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  enactus,
+  trophy,
+  growth,
+  luckgame,
+  ecommerce,
+  cardpay,
+  newsletter,
 };
