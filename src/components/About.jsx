@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon, link }) => (
+const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -24,11 +24,11 @@ const ServiceCard = ({ index, title, icon, link }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-20 h-20 object-contain rounded-full border-8 border-solid border-white '
+          className='w-16 h-16 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
-          <a href={link}>{title}</a>
+          {title}
         </h3>
       </div>
     </motion.div>
@@ -45,17 +45,18 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-slate-600 text-[20px] max-w-3xl leading-[30px] font-weight: 500'
-      > I'm a skilled developer with experience in JavaScript and Reactjs.
-        I'm a quick learner with good command on problem solving analytical skills.
-        Ultimately a detail-oriented individual who collaborates closely with clients to
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+        I'm a skilled software developer with experience in TypeScript and
+        JavaScript, and expertise in frameworks like React, Node.js, and
+        Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index, link) => (
-          <ServiceCard key={service.title} index={index} link={link} {...service} />
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </>

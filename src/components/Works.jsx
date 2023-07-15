@@ -14,7 +14,6 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  wlink,
   source_code_link,
 }) => {
   return (
@@ -49,7 +48,7 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'><a href={wlink}>{name}</a></h3>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
@@ -90,8 +89,8 @@ const Works = () => {
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index, wlink) => (
-          <ProjectCard key={`project-${index}`} index={index} wlink={wlink} {...project} />
+        {projects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
